@@ -2,8 +2,11 @@ const hamburgerMenu = document.querySelector('.hamburger-menu input');
 const span1 = document.querySelector('.hamburger-menu span:nth-child(2)');
 const span2 = document.querySelector('.hamburger-menu span:nth-child(4)');
 const menu = document.querySelector('nav ul');
-const navigasi = document.querySelector('nav')
-const links = document.querySelectorAll('nav ul a')
+const navigasi = document.querySelector('nav');
+const links = document.querySelectorAll('nav ul a');
+const scrollTop = document.querySelector('#topScroll');
+
+
 hamburgerMenu.addEventListener('click', function () {
     span1.classList.toggle('active')
     span2.classList.toggle('active')
@@ -13,6 +16,10 @@ hamburgerMenu.addEventListener('click', function () {
 window.addEventListener("scroll", function () {
     navigasi.classList.toggle('scrolling', window.scrollY > 0)
 });
+window.addEventListener("scroll", function () {
+    scrollTop.classList.toggle('scroll', window.scrollY > 800)
+});
+
 
 
 for (const link of links) {
