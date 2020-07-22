@@ -13,6 +13,11 @@ hamburgerMenu.addEventListener('click', function () {
     menu.classList.toggle('tampil')
 });
 
+
+for (const link of links) {
+    link.addEventListener("click", clickHandler);
+}
+
 window.addEventListener("scroll", function () {
     navigasi.classList.toggle('scrolling', window.scrollY > 0)
 });
@@ -21,10 +26,6 @@ window.addEventListener("scroll", function () {
 });
 
 
-
-for (const link of links) {
-    link.addEventListener("click", clickHandler);
-}
 
 function clickHandler(e) {
     e.preventDefault();
