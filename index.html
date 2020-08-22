@@ -4,9 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/77268f7242.js" crossorigin="anonymous"></script>
+    <!-- link -->
     <link rel="stylesheet" href="style.css">
     <title>CemilanTaruna</title>
 </head>
@@ -14,11 +18,12 @@
 <body id="home">
     <header>
         <nav>
-            <h1 class="logo"><a href="#">CemilanTaruna</a></h1>
+            <h1 class="logo"><a href="index.html">CemilanTaruna</a></h1>
             <ul>
-                <li><a href="#home">Beranda</a></li>
-                <li><a href="#menu">Menu Cemilan</a></li>
-                <li><a href="#kontak">Kontak</a></li>
+                <li><a href="#home" id="link-menu">Home</a></li>
+                <li><a href="#menu" id="link-menu">Menu Cemilan</a></li>
+                <li><a href="#testimonial" id="link-menu">Testimonial</a></li>
+                <li><a href="kontak.html"><button>Kontak</button></a></li>
             </ul>
 
             <div class="hamburger-menu">
@@ -27,6 +32,7 @@
                 <span></span>
                 <span></span>
             </div>
+
         </nav>
 
         <section class="info">
@@ -42,7 +48,7 @@
         <h3 class="judul-cemilan">Menu Cemilan</h3>
         <div class="cards">
             <div class="card">
-                <img src="img/pedasmanis.jpg" alt="Pedas Manis">
+                <img src="img/cemilan/pedasmanis.jpg" alt="Makaroni rasa Pedas Manis">
                 <h4 class="subjudul-cemilan">Makaroni</h4>
                 <p class="text-cemilan harga"><span class="uppercase">Harga:</span> Rp. 2000</p>
                 <p class="text-cemilan">Rasa: Pedas Manis</p>
@@ -52,7 +58,7 @@
                 </a>
             </div>
             <div class="card">
-                <img src="img/original.jpg" alt="Original">
+                <img src="img/cemilan/original.jpg" alt="Makaroni rasa Original">
                 <h4 class="subjudul-cemilan">Makaroni</h4>
                 <p class="text-cemilan harga"><span class="uppercase">Harga:</span> Rp. 2000</p>
                 <p class="text-cemilan">Rasa: Original</p>
@@ -62,7 +68,7 @@
                 </a>
             </div>
             <div class="card">
-                <img src="img/pedesmanis.jpeg" alt="Pedas Manis">
+                <img src="img/cemilan/pedesmanis.jpeg" alt="Makaroni rasa Pedas Manis">
                 <h4 class="subjudul-cemilan">Makaroni</h4>
                 <p class="text-cemilan harga"><span class="uppercase">Harga:</span> Rp. 5000</p>
                 <p class="text-cemilan">Rasa: Pedas Manis</p>
@@ -72,7 +78,7 @@
                 </a>
             </div>
             <div class="card">
-                <img src="img/ori.jpeg" alt="Original">
+                <img src="img/cemilan/ori.jpeg" alt="Makaroni rasa Original">
                 <h4 class="subjudul-cemilan">Makaroni</h4>
                 <p class="text-cemilan harga"><span class="uppercase">Harga:</span> Rp. 5000</p>
                 <p class="text-cemilan">Rasa: Original</p>
@@ -82,26 +88,72 @@
                 </a>
             </div>
         </div>
+        <a href="menu-cemilan.html">
+            <button class="btn">Lihat lainnya <i class="fas fa-arrow-right"></i></button>
+        </a>
     </section>
 
-    <!-- Bagian kontak -->
-    <section class="kontak" id="kontak">
-        <h3 class="judul-kontak">Kontak</h3>
-        <div class="wrap">
-            <h3 class="subjudul-kontak">Jika ingin pesan bisa juga hubungi lewat kontak ini</h3>
-            <div class="menu-kontak depan">
-                <img src="img/icons/facebook.svg" alt="">
-                <p>mfebrian22</p>
+    <section class="testimonial" id="testimonial">
+        <h3 class="judul-testimo">Testimonial</h3>
+        <div class="wrap-testimo">
+            <div class="img-testi">
+                <img src="img/testimo/rafly.jpeg" alt="Profile">
             </div>
-            <div class="menu-kontak">
-                <img src="img/icons/mail.svg" alt="">
-                <p>muhammadfebriyan55@gmail.com</p>
+            <div class="text-testi">
+                <h5>Rafly Nur Fadilah</h5>
+                <q>Cemilannya gurih dan krispi. Harganya pun murah sampai dapat dibeli oleh semua kalangan</q>
+                <div class="icons">
+                    <a href="https://www.instagram.com/rafurai/?hl=id">
+                        <i class="fab fa-instagram-square "></i>
+                    </a>
+                    <div class="star">
+                        <i class="fas fa-star "></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star none"></i>
+                    </div>
+                </div>
             </div>
-            <div class="menu-kontak belakang">
-                <img src="img/icons/instagram.svg" alt="">
-                <p>@mfebrian22</p>
+            <div class="img-testi">
+                <img src="img/testimo/sidiq.jpeg" alt="Profile">
+            </div>
+            <div class="text-testi">
+                <h5>Sidiq Kurniawan</h5>
+                <q>Kemasannya sangat simple, harganya murah dan rasanya enak, sebagai cemilan, ini sangat cocok sekali
+                    untuk dimakan</q>
+                <div class="icons">
+                    <a href="https://www.facebook.com/sidiq.kurniawan.14">
+                        <i class="fab fa-facebook-square "></i>
+                    </a>
+
+                    <div class="star">
+                        <i class="fas fa-star "></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="img-testi">
+                <img src="img/testimo/anis.png" alt="Profile">
+            </div>
+            <div class="text-testi">
+                <h5>Annis FDewi</h5>
+                <q>Makaroni nya enak apalagi keripik pangsitnya beh juara👍🏻 Buat yg suka pedes rekomendasi
+                    banget!!! Selain harganya murah rasanya eunak🤤🤤</q>
+                <div class="icons">
+                    <a href="https://www.facebook.com/aniz.narsiz">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="https://www.instagram.com/anisdewww/?hl=id">
+                        <i class="fab fa-instagram-square"></i>
+                    </a>
+                    <div class="star">
+                        <i class="fas fa-star  "></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                            class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
             </div>
         </div>
+        <a href="testimonial.html">
+            <button class="btn">Lihat lainnya <i class="fas fa-arrow-right"></i></button>
+        </a>
     </section>
 
     <footer>
@@ -116,19 +168,19 @@
         </div>
         <div class="tentang">
             <h4>Tentang</h4>
-            <p> CemilanTaruna Menjual makanan ringan
+            <p> CemilanTaruna menjual makanan ringan
                 <span class="bottom">untuk yang doyan atau suka ngemil dengan</span>
                 <span class="bottom">harga murah dan pastinya bakal bikin nagih</span>
             </p>
         </div>
         <hr>
-        <p class="copyright">© 2020 Copyright CemilanTaruna • All rights reserved. </p>
+        <p class="copyright">© 2020 CemilanTaruna • All rights reserved. </p>
     </footer>
 
-    <a href="#" id="topScroll"></a>
 
-    <script src=" script.js">
-    </script>
+    <div id="loading"></div>
+    <a href="#" id="topScroll"></a>
+    <script src=" script.js"></script>
 </body>
 
 </html>

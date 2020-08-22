@@ -10,16 +10,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Bagian Header */
-header {
-    background-image: url(img/cemilan/header.jpeg);
-    background-repeat: no-repeat;
-    position: relative;
-    background-position: center;
-    background-size: cover;
-    height: 50vh;
-}
-
+/* bagian nav */
 nav {
     padding: 20px 25px;
     display: flex;
@@ -29,11 +20,8 @@ nav {
     transition: all .3s ease-in;
     z-index: 66;
     top: 0;
-}
-
-
-nav.scrolling {
     background-color: #504e4e;
+
 }
 
 nav ul {
@@ -83,10 +71,8 @@ nav ul button:hover {
     font-size: 28px;
 }
 
-
 .logo:active {
     opacity: .8;
-
 }
 
 .logo a {
@@ -98,174 +84,42 @@ nav ul button:hover {
     display: none;
 }
 
-.info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 100%;
-    color: white;
-    width: 100%;
-}
-
-
-
-.judul {
-    font-family: 'Red Hat Display', sans-serif;
-    font-size: 2.5em;
-    margin-bottom: 8px;
-    letter-spacing: .3px;
-    text-shadow: 1px 1px 1px rgb(41, 41, 41);
-}
-
-.sub-judul {
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    letter-spacing: .3px;
-    text-shadow: 1px 1px 1px rgb(41, 41, 41);
-}
-
 .bottom {
     display: block;
-}
-
-/* Menu cemilan */
-
-.menu-cemilan {
-    margin-top: 50px;
-    text-align: center;
-}
-
-.judul-cemilan,
-.judul-kontak,
-.judul-testimo {
-    font-size: 1.6em;
-    text-transform: uppercase;
-    font-family: 'Red Hat Display', sans-serif;
-    display: inline-block;
-}
-
-.judul-cemilan::after,
-.judul-kontak::after,
-.judul-testimo::after {
-    content: '';
-    display: block;
-    width: 50%;
-    height: 2px;
-    border-bottom: 3px solid #504e4e;
-    margin: auto;
-
-}
-
-.cards {
-    margin: 30px auto 0;
-    background-image: linear-gradient(to top, rgb(228, 242, 255), rgb(241, 248, 255), rgb(222, 225, 228));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-
-.card {
-    margin: 30px 20px;
-    border: 3px solid rgb(41, 41, 41);
-    border-radius: 8px;
-    box-shadow: 10px 10px 5px rgb(78, 78, 78);
-    background-color: white;
-}
-
-.subjudul-cemilan,
-.text-cemilan {
-    text-align: left;
-    margin-left: 20px;
-    text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
-}
-
-.harga {
-    text-transform: capitalize;
-}
-
-.uppercase {
-    text-transform: uppercase !important;
-}
-
-.subjudul-cemilan {
-    margin-top: 10px;
-}
-
-.text-cemilan {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-size: 16px;
-}
-
-.tombol {
-    cursor: pointer;
-    background-color: rgb(0, 230, 118);
-    width: 45%;
-    border-radius: 200px;
-    height: 28px;
-    margin: 10px 0 10px 0;
-    border: 2px solid rgb(0, 132, 255);
-    text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    font-weight: bold;
-    letter-spacing: .7px;
-}
-
-.tombol:hover {
-    color: rgb(0, 230, 118);
-    background-color: white;
-}
-
-
-.btn {
-    cursor: pointer;
-    margin: 20px 0;
-    padding: 15px 20px;
-    border-radius: 200px;
-    color: #0A83E2;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    transition: all .3s ease-in-out;
-    font-size: 15px;
-
-}
-
-.btn:hover {
-    border: 1px solid #0A83E2;
 }
 
 
 
 /* Bagian testimonial */
 .testimonial {
-    margin-top: 50px;
-    text-align: center;
-    padding: 40px;
+    padding: 30px;
+    margin-top: 100px;
+}
+
+.wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .wrap-testimo {
-    margin-top: 50px;
     text-align: left;
     display: flex;
-    justify-content: center;
+
 }
+
 
 .img-testi img {
     border-radius: 50%;
     border: 3px solid rgb(6, 72, 255);
     padding: 3px;
+    height: 80px;
+    width: 80px;
+    margin-right: 20px;
 }
 
 .text-testi {
     margin-right: 20px;
     font-family: 'Poppins', sans-serif;
-    margin-left: 20px;
 }
 
 .text-testi h5 {
@@ -276,6 +130,7 @@ nav ul button:hover {
 .text-testi q {
     font-size: 17px;
 }
+
 
 .icons .fab {
     margin-top: 5px;
@@ -295,13 +150,14 @@ nav ul button:hover {
     margin-left: -13px;
 }
 
-.icons .none {
+.fa-star.none {
     color: rgba(54, 54, 54, 0.3);
 }
 
 .icons .fab:hover {
     color: rgba(54, 54, 54, 0.9);
 }
+
 
 
 .wrap-testimo a {
@@ -430,7 +286,12 @@ hr {
 @media (max-width:1024px) {
     nav ul {
         width: 65%;
+    }
 
+    @media (max-width:768px) {
+        .wrap {
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        }
     }
 
     @media(max-width:725px) {
@@ -533,6 +394,10 @@ hr {
 
         .sub-judul {
             font-size: 15px;
+        }
+
+        .wrap {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         }
 
     }

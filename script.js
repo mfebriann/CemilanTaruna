@@ -3,7 +3,7 @@ const span1 = document.querySelector('.hamburger-menu span:nth-child(2)');
 const span2 = document.querySelector('.hamburger-menu span:nth-child(4)');
 const menu = document.querySelector('nav ul');
 const navigasi = document.querySelector('nav');
-const links = document.querySelectorAll('nav ul a');
+const links = document.querySelectorAll('#link-menu');
 const scrollTop = document.querySelector('#topScroll');
 
 
@@ -13,7 +13,7 @@ hamburgerMenu.addEventListener('click', function () {
     menu.classList.toggle('tampil')
 });
 
-
+// Tidak menutupi text
 for (const link of links) {
     link.addEventListener("click", clickHandler);
 }
@@ -29,11 +29,17 @@ window.addEventListener("scroll", function () {
 
 function clickHandler(e) {
     e.preventDefault();
-    const href = this.getAttribute("href");
+    const href = this.getAttribute('href');
     const offsetTop = document.querySelector(href).offsetTop - 120;
-
     scroll({
         top: offsetTop,
         behavior: "smooth"
     });
 }
+
+
+// Loading
+const loading = document.getElementById('loading');
+window.addEventListener('load', function () {
+    loading.style.display = "none";
+})
