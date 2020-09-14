@@ -231,8 +231,7 @@ hr {
     border-right-color: rgb(2, 255, 2);
     position: fixed;
     top: 50%;
-    transform: translate(-50%, -50%);
-    bottom: 50%;
+    right: 50%;
     z-index: 9999;
     animation: loading 2s linear infinite;
 }
@@ -349,6 +348,20 @@ hr {
             .hamburger-menu span:nth-child(2).active,
             .hamburger-menu span:nth-child(4).active {
                 background-color: #0004ff;
+            }
+        }
+
+        @media(max-width:550px) {
+            #loading {
+                right: 45%;
+                left: 45%;
+            }
+        }
+
+        @media (max-width:411px) {
+            #loading {
+                left: 40%;
+                right: 40%;
             }
         }
 

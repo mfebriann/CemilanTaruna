@@ -392,7 +392,8 @@ hr {
     position: fixed;
     top: 50%;
     bottom: 50%;
-    transform: translate(-50%, -50%);
+    left: 50%;
+    right: 50%;
     z-index: 9999;
     animation: loading 2s linear infinite;
 }
@@ -534,6 +535,18 @@ hr {
             font-size: 15px;
         }
 
+        #loading {
+            left: 45%;
+            right: 45%;
+        }
+
+    }
+
+    @media (max-width:411px) {
+        #loading {
+            left: 40%;
+            right: 40%;
+        }
     }
 
     @media (max-width:380px) {
