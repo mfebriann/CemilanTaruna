@@ -231,9 +231,8 @@ hr {
     border-right-color: rgb(2, 255, 2);
     position: fixed;
     top: 50%;
-    left: 50%;
+    transform: translate(-50%, -50%);
     bottom: 50%;
-    right: 50%;
     z-index: 9999;
     animation: loading 2s linear infinite;
 }
